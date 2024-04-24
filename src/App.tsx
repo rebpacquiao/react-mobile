@@ -7,20 +7,17 @@ import ConfirmationComponent from "./components/confirmationComponent";
 import DataSubstanceInformation from "./components/DataSubstanceInformation";
 import ExtremelyFlammableAerosol from "./components/ExtremelyFlammableAerosol";
 import PressurizedContainerComponent from "./components/PressuredContainer";
+import DrowsinessDizzinessComponent from "./components/DrowsinessDizziness";
 import "./App.scss";
 
 import Rectangle_750 from "./assets/img/Rectangle_750.png";
-import Rectangle_756 from "./assets/img/Rectangle_756.png";
 import Rectangle_760 from "./assets/img/Rectangle_760.png";
 import Rectangle_758 from "./assets/img/Rectangle_758.png";
 import Rectangle_767 from "./assets/img/Rectangle_767.png";
 import Rectangle_768 from "./assets/img/Rectangle_768.png";
-import Rectangle_776 from "./assets/img/Rectangle_776.png";
-import Rectangle_772 from "./assets/img/Rectangle_772.png";
 import Rectangle_768_2 from "./assets/img/Rectangle_768_2.png";
 import Rectangle_770 from "./assets/img/Rectangle_770.png";
 import Rectangle_778 from "./assets/img/Rectangle_778.png";
-import Rectangle_780 from "./assets/img/Rectangle_780.png";
 import Rectangle_786 from "./assets/img/Rectangle_786.png";
 import Rectangle_788 from "./assets/img/Rectangle_788.png";
 import Rectangle_790 from "./assets/img/Rectangle_790.png";
@@ -115,7 +112,11 @@ function App() {
             }
           />
         </div>
-        <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <div
+          className="mt-6 substance-section"
+          id="accordion-collapse"
+          data-accordion="collapse"
+        >
           <AccordionItem
             heading="Rating Before Controls: <strong>HIGH RISK</strong>"
             background="medium-risk"
@@ -130,44 +131,7 @@ function App() {
                       </span>
                     </div>
                   </div>
-
-                  <div className="list-img">
-                    <img
-                      src={Rectangle_776}
-                      alt="Rectangle_776"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_772}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_760}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_768_2}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_770}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_778}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_780}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                  </div>
+                  <DrowsinessDizzinessComponent />
                 </div>
               </>
             }
