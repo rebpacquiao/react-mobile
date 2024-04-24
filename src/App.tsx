@@ -6,6 +6,7 @@ import SwitchComponent from "./components/switchComponent";
 import ConfirmationComponent from "./components/confirmationComponent";
 import DataSubstanceInformation from "./components/DataSubstanceInformation";
 import ExtremelyFlammableAerosol from "./components/ExtremelyFlammableAerosol";
+import PressurizedContainerComponent from "./components/PressuredContainer";
 import "./App.scss";
 
 import Rectangle_750 from "./assets/img/Rectangle_750.png";
@@ -87,7 +88,11 @@ function App() {
           />
         </div>
 
-        <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <div
+          className="mt-6 substance-section"
+          id="accordion-collapse"
+          data-accordion="collapse"
+        >
           <AccordionItem
             heading="Rating Before Controls: <strong>HIGH RISK</strong>"
             background="high-risk"
@@ -104,23 +109,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="list-img">
-                    <img
-                      src={Rectangle_756}
-                      alt="Rectangle_756"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_760}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_758}
-                      className="high-risk-img"
-                      alt="Rectangle_758"
-                    />
-                  </div>
+                  <PressurizedContainerComponent />
                 </div>
               </>
             }
