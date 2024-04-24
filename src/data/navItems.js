@@ -1,18 +1,22 @@
 const navItems = [
   {
-    name: "Home",
+    name: "View as pdf",
     href: "#",
   },
   {
-    name: "About",
+    name: "Share",
     href: "#",
   },
   {
-    name: "Services",
+    name: " Refer a friend",
     href: "#",
   },
   {
-    name: "Contact",
+    name: "Report an issue",
+    href: "#",
+  },
+  {
+    name: "Leave a review",
     href: "#",
   },
 ];

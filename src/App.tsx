@@ -4,12 +4,9 @@ import AccordionItem from "./components/Accordion";
 import OwnerInformation from "./components/OwnerInformation";
 import SwitchComponent from "./components/switchComponent";
 import ConfirmationComponent from "./components/confirmationComponent";
+import DataSubstanceInformation from "./components/DataSubstanceInformation";
 import "./App.scss";
-import sevronLogo from "./assets/img/Sevron_Full.png";
-import Rectangle_808 from "./assets/img/Rectangle_808.png";
-import Rectangle_817 from "./assets/img/Rectangle_817.png";
-import Rectangle_810 from "./assets/img/Rectangle_810.png";
-import Rectangle_819 from "./assets/img/Rectangle_819.png";
+
 import Rectangle_750 from "./assets/img/Rectangle_750.png";
 import Rectangle_751 from "./assets/img/Rectangle_751.png";
 import Rectangle_754 from "./assets/img/Rectangle_754.png";
@@ -30,8 +27,6 @@ import Rectangle_790 from "./assets/img/Rectangle_790.png";
 import Rectangle_792 from "./assets/img/Rectangle_792.png";
 import Rectangle_794 from "./assets/img/Rectangle_794.png";
 import Rectangle_796 from "./assets/img/Rectangle_796.png";
-import Group_1 from "./assets/img/group_1.png";
-import Group_2 from "./assets/img/group_2.png";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -47,30 +42,10 @@ function App() {
             content={
               <>
                 <div className="accordion-desk">
-                  <h5>SUBSTANCE INFORMATION</h5>
-                  <div className="list-desc">
-                    <p>
-                      <strong>Product Name:</strong>
-                      <span className="muted-text">Industry Cleaner 500ml</span>
-                    </p>
-                    <p>
-                      <strong>Product Code:</strong>
-                      <span className="muted-text">0893 140</span>
-                    </p>
-                    <p>
-                      <strong>Manufacturer:</strong>
-                      <span className="muted-text">Wurth UK Ltd.</span>
-                    </p>
-                    <p>
-                      <strong>Hazard Symbols</strong>
-                    </p>
-                  </div>
-                  <div className="list-img">
-                    <img src={Rectangle_808} alt="Rectangle_808" />
-                    <img src={Rectangle_817} alt="Rectangle_817" />
-                    <img src={Rectangle_810} alt="Rectangle_810" />
-                    <img src={Rectangle_819} alt="Rectangle_819" />
-                  </div>
+                  <h5>
+                    <strong>SUBSTANCE INFORMATION</strong>
+                  </h5>
+                  <DataSubstanceInformation />
                 </div>
               </>
             }

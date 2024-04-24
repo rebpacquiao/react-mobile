@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import sevronLogo from "../assets/img/Sevron_Full.png";
+import navItems from "../data/navItems";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,34 +38,16 @@ const Navbar = () => {
         id="menu"
       >
         <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
-          <li className="border-b border-gray-300 md:border-b-0">
-            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
-              View as pdf
-            </a>
-          </li>
-          <li className="border-b border-gray-300 md:border-b-0">
-            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
-              Share
-            </a>
-          </li>
-          <li className="border-b border-gray-300 md:border-b-0">
-            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
-              Refer a friend
-            </a>
-          </li>
-          <li className="border-b border-gray-300 md:border-b-0">
-            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
-              Report an issue
-            </a>
-          </li>
-          <li className="border-b border-gray-300 md:border-b-0">
-            <a
-              className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-              href="#"
-            >
-              Leave a review
-            </a>
-          </li>
+          {navItems.map((item, index) => (
+            <li key={index} className="border-b border-gray-300 md:border-b-0">
+              <a
+                className="md:p-4 py-2 block hover:text-purple-400"
+                href={item.href}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

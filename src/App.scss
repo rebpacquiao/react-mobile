@@ -30,6 +30,13 @@
 .list-img {
   display: flex;
   gap: 15px;
+  flex-direction: column;
+
+  .hazard-symbols {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .muted-text {
@@ -181,4 +188,17 @@ a.nav-title {
 
 .navigation {
   border-bottom: 1px solid #ddd;
+}
+
+li.data-item ul li {
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 13px;
+}
+
+.checkbox-section {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
