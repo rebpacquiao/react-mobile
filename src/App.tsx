@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import AccordionItem from "./components/Accordion";
 import OwnerInformation from "./components/OwnerInformation";
+import SwitchComponent from "./components/switchComponent";
 import "./App.scss";
 import sevronLogo from "./assets/img/Sevron_Full.png";
 import Rectangle_808 from "./assets/img/Rectangle_808.png";
@@ -375,6 +376,26 @@ function App() {
                     className="high-risk-img"
                   />
                 </div>
+              </div>
+            </>
+          }
+        />
+      </div>
+      <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <AccordionItem
+          heading="Training Recommendations from <strong>The Knights of Safety Academy</strong>"
+          background="medium-risk"
+          content={
+            <>
+              <div className="accordion-desk">
+                <span className="muted-text">
+                  <p>
+                    View a list of recommended training courses tailored to the
+                    hazards and controls above by identifying whether you are a
+                    Risk Assessor or Task Operator.
+                  </p>
+                </span>
+                <SwitchComponent />
               </div>
             </>
           }

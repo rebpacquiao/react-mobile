@@ -82,3 +82,46 @@
     border-radius: 5px;
   }
 }
+
+.switch-toggle {
+  display: flex;
+  background: #eaeaea;
+  width: 256px;
+  padding: 5px;
+  border-radius: 25px;
+  align-items: center;
+  gap: 15px;
+
+  button {
+    padding: 9px 10px;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .active {
+    background-color: #f2b705;
+  }
+}
+
+.list-container {
+  display: flex;
+  margin-bottom: 1em;
+
+  .listing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .enroll-btn {
+    background: #f2b705;
+    padding: 10px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 43px;
+  }
+}
