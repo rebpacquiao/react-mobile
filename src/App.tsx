@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import AccordionItem from "./components/Accordion";
 import OwnerInformation from "./components/OwnerInformation";
 import SwitchComponent from "./components/switchComponent";
+import ConfirmationComponent from "./components/confirmationComponent";
 import "./App.scss";
 import sevronLogo from "./assets/img/Sevron_Full.png";
 import Rectangle_808 from "./assets/img/Rectangle_808.png";
@@ -396,6 +397,30 @@ function App() {
                   </p>
                 </span>
                 <SwitchComponent />
+              </div>
+            </>
+          }
+        />
+      </div>
+      <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <AccordionItem
+          heading="Confirmation"
+          background="confirmation"
+          content={
+            <>
+              <div className="accordion-desk">
+                <span className="muted-text">
+                  <p>
+                    I confirm that I have read & understood the content of the
+                    above assessment, and that I have been instructed on the
+                    hazards & control measures associated with the task
+                    including the task specific information. I also confirm that
+                    if the work environment changes or other hazards occur I
+                    will bring it to the attention of my immediate supervisor.
+                  </p>
+                </span>
+
+                <ConfirmationComponent />
               </div>
             </>
           }

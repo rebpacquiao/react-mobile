@@ -2,10 +2,10 @@ import React from "react";
 
 function Listing({ title, description, thumbnail }) {
   return (
-    <div className="list-container">
-      <img src={thumbnail} alt={title} style={{ marginRight: "1em" }} />
+    <div className="list-container flex flex-col sm:flex-row">
+      <img src={thumbnail} alt={title} className="mr-4" />
       <div className="listing-content">
-        <h2 style={{ fontWeight: "bold" }}>{title}</h2>
+        <h2 className="font-bold">{title}</h2>
         <p>{description}</p>
         <button className="enroll-btn">ENROLL FOR FREE</button>
       </div>
