@@ -12,6 +12,7 @@ export default {
         clear: "#F0EFEF",
         darkOrange: "#F28E05",
         mediumRisk: "#F2B705",
+        confirm: "#808080",
       },
     },
   },

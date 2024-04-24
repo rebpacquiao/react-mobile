@@ -5,11 +5,10 @@ import OwnerInformation from "./components/OwnerInformation";
 import SwitchComponent from "./components/switchComponent";
 import ConfirmationComponent from "./components/confirmationComponent";
 import DataSubstanceInformation from "./components/DataSubstanceInformation";
+import ExtremelyFlammableAerosol from "./components/ExtremelyFlammableAerosol";
 import "./App.scss";
 
 import Rectangle_750 from "./assets/img/Rectangle_750.png";
-import Rectangle_751 from "./assets/img/Rectangle_751.png";
-import Rectangle_754 from "./assets/img/Rectangle_754.png";
 import Rectangle_756 from "./assets/img/Rectangle_756.png";
 import Rectangle_760 from "./assets/img/Rectangle_760.png";
 import Rectangle_758 from "./assets/img/Rectangle_758.png";
@@ -60,7 +59,11 @@ function App() {
           REGULATORY STATEMENTS & CONTROLS
         </h5>
 
-        <div id="accordion-collapse" data-accordion="collapse">
+        <div
+          id="accordion-collapse"
+          className="substance-section"
+          data-accordion="collapse"
+        >
           <AccordionItem
             heading="Rating Before Controls: <strong>HIGH RISK</strong>"
             background="high-risk"
@@ -77,33 +80,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="list-img">
-                    <img
-                      src={Rectangle_751}
-                      alt="Rectangle_808"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_754}
-                      alt="Rectangle_754"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_756}
-                      alt="Rectangle_756"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_760}
-                      className="high-risk-img"
-                      alt="Rectangle_760"
-                    />
-                    <img
-                      src={Rectangle_758}
-                      className="high-risk-img"
-                      alt="Rectangle_758"
-                    />
-                  </div>
+                  <ExtremelyFlammableAerosol />
                 </div>
               </>
             }
@@ -121,7 +98,7 @@ function App() {
                     <div className="flex-two-column-row">
                       <img src={Rectangle_767} alt="Rectangle_750" />
                       <span className="muted-text">
-                        H229: Pressurized Container; <br />
+                        H229: Pressurized Container <br />
                         May burst if heated
                       </span>
                     </div>
