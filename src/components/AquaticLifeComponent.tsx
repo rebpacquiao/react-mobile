@@ -1,7 +1,7 @@
 import React from "react";
-import { images, checkBoxData, confirm } from "../data/skinReactionData.js";
+import { images, checkBoxData, confirm } from "../data/aquaticLifeData.js";
 
-const SkinReactionComponent = () => {
+const AquaticLifeComponent = () => {
   return (
     <>
       <div className="list-img">
@@ -15,7 +15,7 @@ const SkinReactionComponent = () => {
       <div className="checkbox-section">
         <div className="flex items-center mb-5">
           <label
-            htmlFor="skin-reaction-disabled-checked-checkbox"
+            htmlFor="aquatic-disabled-checked-checkbox"
             className="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500"
           >
             {confirm.map((item, index) => (
@@ -27,13 +27,13 @@ const SkinReactionComponent = () => {
         </div>
         <div className="flex items-center">
           <input
-            id="skin-reaction-disabled-checked-checkbox"
+            id="aquatic-disabled-checked-checkbox"
             type="checkbox"
             value=""
             className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           />
           <label
-            htmlFor="skin-reaction-disabled-checked-checkbox"
+            htmlFor="aquatic-disabled-checked-checkbox"
             className="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500"
           >
             {checkBoxData.map((item, index) => (
@@ -48,4 +48,4 @@ const SkinReactionComponent = () => {
   );
 };
 
-export default SkinReactionComponent;
+export default AquaticLifeComponent;
