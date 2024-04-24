@@ -9,6 +9,7 @@ import ExtremelyFlammableAerosol from "./components/ExtremelyFlammableAerosol";
 import PressurizedContainerComponent from "./components/PressuredContainer";
 import DrowsinessDizzinessComponent from "./components/DrowsinessDizziness";
 import SkinIrritationComponent from "./components/skinIrritationComponent";
+import SkinReactionComponent from "./components/SkinReactionComponent";
 import "./App.scss";
 
 import Rectangle_750 from "./assets/img/Rectangle_750.png";
@@ -19,11 +20,6 @@ import Rectangle_768 from "./assets/img/Rectangle_768.png";
 import Rectangle_768_2 from "./assets/img/Rectangle_768_2.png";
 import Rectangle_770 from "./assets/img/Rectangle_770.png";
 import Rectangle_778 from "./assets/img/Rectangle_778.png";
-import Rectangle_786 from "./assets/img/Rectangle_786.png";
-import Rectangle_788 from "./assets/img/Rectangle_788.png";
-import Rectangle_790 from "./assets/img/Rectangle_790.png";
-import Rectangle_792 from "./assets/img/Rectangle_792.png";
-import Rectangle_794 from "./assets/img/Rectangle_794.png";
 import Rectangle_796 from "./assets/img/Rectangle_796.png";
 
 function App() {
@@ -164,7 +160,11 @@ function App() {
             }
           />
         </div>
-        <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <div
+          className="mt-6 substance-section"
+          id="accordion-collapse"
+          data-accordion="collapse"
+        >
           <AccordionItem
             heading="Rating Before Controls: <strong>LOW RISK</strong>"
             background="low-risk"
@@ -180,38 +180,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="list-img">
-                    <img
-                      src={Rectangle_786}
-                      alt="Rectangle_786"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_788}
-                      alt="Rectangle_788"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_790}
-                      alt="Rectangle_788"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_770}
-                      alt="Rectangle_788"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_792}
-                      alt="Rectangle_792"
-                      className="high-risk-img"
-                    />
-                    <img
-                      src={Rectangle_794}
-                      alt="Rectangle_792"
-                      className="high-risk-img"
-                    />
-                  </div>
+                  <SkinReactionComponent />
                 </div>
               </>
             }
