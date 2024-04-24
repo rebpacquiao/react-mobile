@@ -40,9 +40,14 @@ const Navbar = () => {
       >
         <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
           {navItems.map((item, index) => (
-            <li key={index} className="border-b border-gray-300 md:border-b-0">
+            <li
+              key={index}
+              className={`${
+                index === navItems.length - 1 ? "" : "border-b border-gray-300"
+              } md:border-b-0`}
+            >
               <Link
-                className="md:p-4 py-2 block hover:text-purple-400"
+                className="md:p-4 py-3 block hover:text-purple-400"
                 to={item.href}
               >
                 {item.name}
