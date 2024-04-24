@@ -27,6 +27,7 @@ import Rectangle_788 from "./assets/img/Rectangle_788.png";
 import Rectangle_790 from "./assets/img/Rectangle_790.png";
 import Rectangle_792 from "./assets/img/Rectangle_792.png";
 import Rectangle_794 from "./assets/img/Rectangle_794.png";
+import Rectangle_796 from "./assets/img/Rectangle_796.png";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -270,6 +271,107 @@ function App() {
                   <img
                     src={Rectangle_794}
                     alt="Rectangle_792"
+                    className="high-risk-img"
+                  />
+                </div>
+              </div>
+            </>
+          }
+        />
+      </div>
+      <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <AccordionItem
+          heading="Rating Before Controls: <strong>LOW RISK</strong>"
+          background="low-risk"
+          content={
+            <>
+              <div className="accordion-desk">
+                <div className="high-risk-border">
+                  <div className="flex-two-column-row">
+                    <img src={Rectangle_768} alt="Rectangle_750" />
+                    <span className="muted-text">
+                      H317: May cause an allergic skin reaction
+                    </span>
+                  </div>
+                </div>
+
+                <div className="list-img">
+                  <img
+                    src={Rectangle_786}
+                    alt="Rectangle_786"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_788}
+                    alt="Rectangle_788"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_790}
+                    alt="Rectangle_788"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_770}
+                    alt="Rectangle_788"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_792}
+                    alt="Rectangle_792"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_794}
+                    alt="Rectangle_792"
+                    className="high-risk-img"
+                  />
+                </div>
+              </div>
+            </>
+          }
+        />
+      </div>
+      <div className="mt-6" id="accordion-collapse" data-accordion="collapse">
+        <AccordionItem
+          heading="Rating Before Controls: <strong>LOW RISK</strong>"
+          background="low-risk"
+          content={
+            <>
+              <div className="accordion-desk">
+                <div className="high-risk-border">
+                  <div className="flex-two-column-row">
+                    <img src={Rectangle_796} alt="Rectangle_750" />
+                    <span className="muted-text">
+                      H411: Toxic to aquatic life with long lasting effects
+                    </span>
+                  </div>
+                </div>
+
+                <div className="list-img">
+                  <img
+                    src={Rectangle_760}
+                    alt="Rectangle_760"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_758}
+                    alt="Rectangle_758"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_768_2}
+                    alt="Rectangle_768_2"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_770}
+                    alt="Rectangle_768_2"
+                    className="high-risk-img"
+                  />
+                  <img
+                    src={Rectangle_778}
+                    alt="Rectangle_768_2"
                     className="high-risk-img"
                   />
                 </div>
