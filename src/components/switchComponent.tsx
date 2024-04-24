@@ -27,11 +27,30 @@ function SwitchComponent() {
       </div>
       <div className="mt-6">
         {active === "Risk assessor" ? (
-          <div>
-            {listings.map((listing, index) => (
-              <Listing key={index} {...listing} />
-            ))}
-          </div>
+          <>
+            <div>
+              {listings.map((listing, index) => (
+                <Listing key={index} {...listing} />
+              ))}
+            </div>
+            <div className="flex items-center">
+              <input
+                id="disabled-checked-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="disabled-checked-checkbox"
+                className="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500"
+              >
+                By ticking this box, I confirm that I have been trained to
+                assess the risks involving the use of chemicals and hazardous
+                substances through a separate course provider or one of the
+                courses above.
+              </label>
+            </div>
+          </>
         ) : (
           <p>Coming Soon...</p>
         )}
