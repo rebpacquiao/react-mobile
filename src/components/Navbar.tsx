@@ -3,14 +3,15 @@ import navItems from "../data/navItems";
 
 const Navbar = ({ show, setShow }) => {
   return (
-    <nav className="bg-gray-800 p-2 mt-0 fixed w-full">
+    <nav className="p-2 mt-0 w-full">
       <div className="container mx-auto flex flex-wrap items-center">
         <div className="flex w-full md:w-1/2 justify-between items-center">
-          <a className="text-white text-2xl lg:text-3xl font-bold" href="#">
-            Logo
+          <a className="text-dark font-bold" href="#">
+            <div className="text-1xl lg:text-1xl">COSHH Risk Assessment</div>
+            <div className="text-sm lg:text-sm">for industry Cleaner 500ml</div>
           </a>
           <button
-            className="text-white lg:hidden hover:text-gray-300"
+            className="text-dark lg:hidden hover:text-gray-300"
             onClick={() => setShow(!show)}
           >
             <svg
@@ -40,7 +41,10 @@ const Navbar = ({ show, setShow }) => {
             <ul className="list-reset flex flex-col md:flex-row md:items-center md:justify-end text-center text-white">
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <a className="px-4 hover:text-gray-300" href={item.href}>
+                  <a
+                    className="px-4 text-dark hover:text-gray-300"
+                    href={item.href}
+                  >
                     {item.name}
                   </a>
                 </li>
