@@ -4,10 +4,19 @@ import {
   checkBoxData,
   confirm,
 } from "../data/pressuredContainerData.js";
+import Rectangle_767 from "../assets/img/Rectangle_767.png";
 
 const PressurizedContainerComponent = () => {
   return (
     <>
+      <div className="high-risk-border">
+        <div className="flex-two-column-row">
+          <img src={Rectangle_767} alt="Rectangle_750" />
+          <span className="muted-text">
+            H229: Pressurized Container May burst if heated
+          </span>
+        </div>
+      </div>
       <div className="list-img">
         {images.map((image, index) => (
           <div className="hazard-symbols" key={index}>

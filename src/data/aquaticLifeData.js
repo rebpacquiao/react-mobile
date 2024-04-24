@@ -9,7 +9,7 @@ export const images = [
     src: Rectangle_760,
     alt: "Rectangle_760",
     description:
-      "P403 + P233: Store in a well-ventilated place. Keep container tighty closed.",
+      "P403 + P233: Store in a well-ventilated place. Keep container tighty closed.",
   },
   {
     src: Rectangle_758,

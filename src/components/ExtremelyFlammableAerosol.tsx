@@ -4,10 +4,17 @@ import {
   checkBoxData,
   confirm,
 } from "../data/extremelyFlammableData.js";
+import Rectangle_750 from "../assets/img/Rectangle_750.png";
 
 const ExtremelyFlammableAerosol = () => {
   return (
     <>
+      <div className="high-risk-border">
+        <div className="flex-two-column-row">
+          <img src={Rectangle_750} alt="Rectangle_750" />
+          <span className="muted-text">H222: Extremely Flammable Aerosol</span>
+        </div>
+      </div>
       <div className="list-img">
         {images.map((image, index) => (
           <div className="hazard-symbols" key={index}>

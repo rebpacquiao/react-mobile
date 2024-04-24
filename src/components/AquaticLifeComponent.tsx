@@ -1,9 +1,18 @@
 import React from "react";
 import { images, checkBoxData, confirm } from "../data/aquaticLifeData.js";
+import Rectangle_796 from "../assets/img/Rectangle_796.png";
 
 const AquaticLifeComponent = () => {
   return (
     <>
+      <div className="high-risk-border">
+        <div className="flex-two-column-row">
+          <img src={Rectangle_796} alt="Rectangle_750" />
+          <span className="muted-text">
+            H411: Toxic to aquatic life with long lasting effects
+          </span>
+        </div>
+      </div>
       <div className="list-img">
         {images.map((image, index) => (
           <div className="hazard-symbols" key={index}>

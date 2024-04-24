@@ -1,9 +1,18 @@
 import React from "react";
 import { images, checkBoxData, confirm } from "../data/skinReactionData.js";
+import Rectangle_768 from "../assets/img/Rectangle_768.png";
 
 const SkinReactionComponent = () => {
   return (
     <>
+      <div className="high-risk-border">
+        <div className="flex-two-column-row">
+          <img src={Rectangle_768} alt="Rectangle_750" />
+          <span className="muted-text">
+            H317: May cause an allergic skin reaction
+          </span>
+        </div>
+      </div>
       <div className="list-img">
         {images.map((image, index) => (
           <div className="hazard-symbols" key={index}>

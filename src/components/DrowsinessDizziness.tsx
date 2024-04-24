@@ -4,10 +4,19 @@ import {
   checkBoxData,
   confirm,
 } from "../data/drowsinessDizzinessData.js";
+import Rectangle_768 from "../assets/img/Rectangle_768.png";
 
 const DrowsinessDizzinessComponent = () => {
   return (
     <>
+      <div className="high-risk-border">
+        <div className="flex-two-column-row">
+          <img src={Rectangle_768} alt="Rectangle_750" />
+          <span className="muted-text">
+            H336: May cause drowsiness and dizziness
+          </span>
+        </div>
+      </div>
       <div className="list-img">
         {images.map((image, index) => (
           <div className="hazard-symbols" key={index}>

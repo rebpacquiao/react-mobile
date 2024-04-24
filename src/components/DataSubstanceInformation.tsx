@@ -4,6 +4,9 @@ import { data, images, checkBoxData } from "../data/substanceData.js";
 const DataSubstanceInformation = () => {
   return (
     <>
+      <h5>
+        <strong>SUBSTANCE INFORMATION</strong>
+      </h5>
       <ul className="data-list">
         {data.map((item, index) => (
           <li key={index} className="data-item">
