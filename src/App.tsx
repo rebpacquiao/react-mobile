@@ -35,7 +35,11 @@ function App() {
     <>
       <Navbar show={show} setShow={setShow} />
       <div className="app-container">
-        <div id="accordion-collapse" data-accordion="collapse">
+        <div
+          id="accordion-collapse"
+          className="substance-section"
+          data-accordion="collapse"
+        >
           <AccordionItem
             heading="Rating Before Controls: <strong>MEDIUM RISK</strong>"
             background="medium-risk"
