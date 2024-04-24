@@ -12,19 +12,19 @@ const DataSubstanceInformation = () => {
           <li key={index} className="data-item">
             <ul>
               <li>
-                <strong>Product Name:</strong>
+                <strong className="mr-2">Product Name:</strong>
                 <span className="muted-text">{item.productName}</span>
               </li>
               <li>
-                <strong>Product Code:</strong>
+                <strong className="mr-2">Product Code:</strong>
                 <span className="muted-text">{item.productCode}</span>
               </li>
               <li>
-                <strong>Manufacturer:</strong>
+                <strong className="mr-2">Manufacturer:</strong>
                 <span className="muted-text">{item.manufacturer}</span>
               </li>
               <li>
-                <strong>SDS Number:</strong>
+                <strong className="mr-2">SDS Number:</strong>
                 <span className="muted-text">{item.sdsNumber}</span>
               </li>
             </ul>

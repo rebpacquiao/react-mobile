@@ -18,7 +18,7 @@ function AccordionItem({ heading, content, background }) {
         >
           <span dangerouslySetInnerHTML={{ __html: heading }}></span>
           <svg
-            className={`w-3 h-3 rotate-${isOpen ? "0" : "180"} shrink-0`}
+            className={`w-3 h-3 ${isOpen ? "rotate-180" : "rotate-0"} shrink-0`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -35,7 +35,7 @@ function AccordionItem({ heading, content, background }) {
         </button>
       </h2>
       <div className={`${isOpen ? "" : "hidden"}`}>
-        <div className="p-2 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+        <div className="p-2">
           <div className="bg-white accordion-content">{content}</div>
         </div>
       </div>

@@ -89,7 +89,7 @@ function HomePage() {
           </div>
         ))}
         <OwnerInformation />
-        <h5 className="mt-6 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="mt-6 mb-2 text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           REGULATORY STATEMENTS & CONTROLS
         </h5>
 
