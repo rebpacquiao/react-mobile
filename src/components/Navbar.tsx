@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import sevronLogo from "../assets/img/Sevron_Full.png";
 import navItems from "../data/navItems";
 
@@ -8,11 +9,11 @@ const Navbar = () => {
   return (
     <nav className="flex flex-wrap navigation items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
       <div className="main-nav">
-        <a className="nav-title" href="#">
+        <Link className="nav-title" to="/">
           <strong>
             <img src={sevronLogo} alt="Sevron Logo" className="img-logo" />
           </strong>
-        </a>
+        </Link>
       </div>
 
       <svg
@@ -40,12 +41,12 @@ const Navbar = () => {
         <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
           {navItems.map((item, index) => (
             <li key={index} className="border-b border-gray-300 md:border-b-0">
-              <a
+              <Link
                 className="md:p-4 py-2 block hover:text-purple-400"
-                href={item.href}
+                to={item.href}
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
