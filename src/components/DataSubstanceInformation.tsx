@@ -58,6 +58,14 @@ const DataSubstanceInformation = () => {
           ))}
         </label>
       </div>
+      <div className="flex flex-col sm:flex-row">
+        <button className="mb-2 sm:mb-0 sm:mr-2 bg-mediumRisk hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
+          VIEW SAFETY DATA SHEET
+        </button>
+        <button className="bg-mediumRisk hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
+          VIEW ONE PAGE ASSESSMENT PDF
+        </button>
+      </div>
     </>
   );
 };

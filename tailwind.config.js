@@ -11,6 +11,7 @@ export default {
         dark: "#000",
         clear: "#F0EFEF",
         darkOrange: "#F28E05",
+        mediumRisk: "#F2B705",
       },
     },
   },
