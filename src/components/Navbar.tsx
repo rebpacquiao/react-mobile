@@ -1,57 +1,71 @@
-import React from "react";
-import navItems from "../data/navItems";
+import React, { useState } from "react";
+import sevronLogo from "../assets/img/Sevron_Full.png";
 
-const Navbar = ({ show, setShow }) => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="p-2 mt-0 w-full">
-      <div className="container mx-auto flex flex-wrap items-center">
-        <div className="flex w-full md:w-1/2 justify-between items-center">
-          <a className="text-dark font-bold" href="#">
-            <div className="text-1xl lg:text-1xl">COSHH Risk Assessment</div>
-            <div className="text-sm lg:text-sm">for industry Cleaner 500ml</div>
-          </a>
-          <button
-            className="text-dark lg:hidden hover:text-gray-300"
-            onClick={() => setShow(!show)}
-          >
-            <svg
-              className="h-6 w-6 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+    <nav className="flex flex-wrap navigation items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
+      <div className="main-nav">
+        <a className="nav-title" href="#">
+          <strong>
+            <img src={sevronLogo} alt="Sevron Logo" className="img-logo" />
+          </strong>
+        </a>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 cursor-pointer md:hidden block"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+
+      <div
+        className={`${
+          isOpen ? "block" : "hidden"
+        } w-full md:flex md:items-center md:w-auto`}
+        id="menu"
+      >
+        <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+          <li className="border-b border-gray-300 md:border-b-0">
+            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
+              View as pdf
+            </a>
+          </li>
+          <li className="border-b border-gray-300 md:border-b-0">
+            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
+              Share
+            </a>
+          </li>
+          <li className="border-b border-gray-300 md:border-b-0">
+            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
+              Refer a friend
+            </a>
+          </li>
+          <li className="border-b border-gray-300 md:border-b-0">
+            <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
+              Report an issue
+            </a>
+          </li>
+          <li className="border-b border-gray-300 md:border-b-0">
+            <a
+              className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
+              href="#"
             >
-              {!show && (
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                />
-              )}
-              {show && (
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M4.293 4.293a1 1 0 0 1 1.414 0L12 10.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414z"
-                />
-              )}
-            </svg>
-          </button>
-        </div>
-        {show && (
-          <div className="w-full md:w-1/2">
-            <ul className="list-reset flex flex-col md:flex-row md:items-center md:justify-end text-center text-white">
-              {navItems.map((item, index) => (
-                <li key={index}>
-                  <a
-                    className="px-4 text-dark hover:text-gray-300"
-                    href={item.href}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+              Leave a review
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

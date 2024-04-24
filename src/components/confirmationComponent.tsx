@@ -3,10 +3,19 @@ import React from "react";
 function confirmationComponent() {
   return (
     <form>
+      <span className="mb-6 muted-text">
+        <p>
+          I confirm that I have read & understood the content of the above
+          assessment, and that I have been instructed on the hazards & control
+          measures associated with the task including the task specific
+          information. I also confirm that if the work environment changes or
+          other hazards occur I will bring it to the attention of my immediate
+          supervisor.
+        </p>
+      </span>
       <textarea
         id="message"
-        rows="4"
-        className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="mt-6 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Inter your signature here..."
       ></textarea>
       <div className="mt-6 grid gap-6 mb-6">

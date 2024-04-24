@@ -145,3 +145,40 @@
   display: flex;
   gap: 10px;
 }
+
+a.nav-title {
+  display: flex;
+  flex-direction: column;
+
+  .muted-text {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-left: 2px;
+  }
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.header-logo {
+  display: flex;
+
+  .left-header-logo {
+    margin-right: auto;
+  }
+
+  .right-header-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+      height: 26px;
+    }
+  }
+}
+
+.navigation {
+  border-bottom: 1px solid #ddd;
+}

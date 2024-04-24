@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function AccordionItem({ heading, content, background }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
