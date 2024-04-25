@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import sevronLogo from "../assets/img/Sevron_Full.png";
 import navItems from "../data/navItems";
 
-const Navbar = () => {
+interface NavbarProps {
+  show: boolean;
+  setShow: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ show, setShow }) => {
   const [isOpen, setIsOpen] = useState(false);
+  console.log(show, setShow);
+  const handleClick = () => {
+    setIsOpen(false);
+    setShow(false);
+  };
 
   return (
     <nav className="flex flex-wrap navigation items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
@@ -49,6 +59,7 @@ const Navbar = () => {
               <Link
                 className="md:p-4 py-3 block hover:text-purple-400"
                 to={item.href}
+                onClick={handleClick}
               >
                 {item.name}
               </Link>

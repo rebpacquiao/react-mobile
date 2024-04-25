@@ -1,5 +1,4 @@
-import React from "react";
-import { data, images, checkBoxData } from "../data/substanceData.js";
+import { data, images, checkBoxData } from "../data/substanceData";
 
 const DataSubstanceInformation = () => {
   return (

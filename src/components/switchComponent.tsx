@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import listings from "../data/riskAssesorListing";
 import Listing from "../components/riskAssesor";
 
 function SwitchComponent() {
   const [active, setActive] = useState("Risk assessor");
 
-  const handleClick = (role) => {
+  const handleClick = (role: string) => {
     setActive(role);
   };
 

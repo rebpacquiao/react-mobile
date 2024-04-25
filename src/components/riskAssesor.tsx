@@ -1,6 +1,6 @@
-import React from "react";
+import { ListingProps } from "../models/ListingModel";
 
-function Listing({ title, description, thumbnail }) {
+function Listing({ title, description, thumbnail }: ListingProps) {
   return (
     <div className="list-container flex flex-col sm:flex-row">
       <img src={thumbnail} alt={title} className="mr-4" />

@@ -1,9 +1,4 @@
-import React from "react";
-import {
-  images,
-  checkBoxData,
-  confirm,
-} from "../data/extremelyFlammableData.js";
+import { images, checkBoxData, confirm } from "../data/extremelyFlammableData";
 import Rectangle_750 from "../assets/img/Rectangle_750.png";
 
 const ExtremelyFlammableAerosol = () => {

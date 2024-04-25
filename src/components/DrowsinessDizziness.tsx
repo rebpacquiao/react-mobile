@@ -1,9 +1,4 @@
-import React from "react";
-import {
-  images,
-  checkBoxData,
-  confirm,
-} from "../data/drowsinessDizzinessData.js";
+import { images, checkBoxData, confirm } from "../data/drowsinessDizzinessData";
 import Rectangle_768 from "../assets/img/Rectangle_768.png";
 
 const DrowsinessDizzinessComponent = () => {

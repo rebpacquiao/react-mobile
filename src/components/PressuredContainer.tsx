@@ -1,9 +1,4 @@
-import React from "react";
-import {
-  images,
-  checkBoxData,
-  confirm,
-} from "../data/pressuredContainerData.js";
+import { images, checkBoxData, confirm } from "../data/pressuredContainerData";
 import Rectangle_767 from "../assets/img/Rectangle_767.png";
 
 const PressurizedContainerComponent = () => {

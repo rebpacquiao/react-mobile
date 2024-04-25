@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import AccordionItemProps from "../models/AccordionItem";
 
-function AccordionItem({ heading, content, background }) {
+const AccordionItem: React.FC<AccordionItemProps> = ({
+  heading,
+  content,
+  background,
+}) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleAccordion = () => {
@@ -41,6 +46,6 @@ function AccordionItem({ heading, content, background }) {
       </div>
     </div>
   );
-}
+};
 
 export default AccordionItem;

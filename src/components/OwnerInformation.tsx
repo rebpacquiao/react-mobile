@@ -1,4 +1,3 @@
-import React from "react";
 import sevronLogo from "../assets/img/Sevron_Full.png";
 
 function OwnerInformation() {

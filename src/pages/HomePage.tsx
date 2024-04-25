@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import AccordionItem from "../components/Accordion";
 import OwnerInformation from "../components/OwnerInformation";
 import SwitchComponent from "../components/switchComponent";
@@ -13,8 +12,6 @@ import AquaticLifeComponent from "../components/AquaticLifeComponent";
 import "../App.scss";
 
 function HomePage() {
-  const [show, setShow] = useState(false);
-
   const accordionSubstance = [
     {
       heading: "Rating Before Controls: <strong>MEDIUM RISK</strong>",

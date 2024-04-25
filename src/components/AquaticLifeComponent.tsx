@@ -1,6 +1,6 @@
-import React from "react";
-import { images, checkBoxData, confirm } from "../data/aquaticLifeData.js";
+import { images, checkBoxData, confirm } from "../data/aquaticLifeData";
 import Rectangle_796 from "../assets/img/Rectangle_796.png";
+import { Image, ConfirmItem, CheckBoxItem } from "../models/AquaticLifeModels";
 
 const AquaticLifeComponent = () => {
   return (
@@ -14,7 +14,7 @@ const AquaticLifeComponent = () => {
         </div>
       </div>
       <div className="list-img">
-        {images.map((image, index) => (
+        {images.map((image: Image, index: number) => (
           <div className="hazard-symbols" key={index}>
             <img src={image.src} alt={image.alt} />
             <p className="muted-text">{image.description}</p>
@@ -27,7 +27,7 @@ const AquaticLifeComponent = () => {
             htmlFor="aquatic-disabled-checked-checkbox"
             className="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500"
           >
-            {confirm.map((item, index) => (
+            {confirm.map((item: ConfirmItem, index: number) => (
               <div className="hazard-symbols" key={index}>
                 <p className="text-confirm text-lg">{item.label}</p>
               </div>
@@ -45,7 +45,7 @@ const AquaticLifeComponent = () => {
             htmlFor="aquatic-disabled-checked-checkbox"
             className="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500"
           >
-            {checkBoxData.map((item, index) => (
+            {checkBoxData.map((item: CheckBoxItem, index: number) => (
               <div className="hazard-symbols" key={index}>
                 <p className="muted-text">{item.label}</p>
               </div>

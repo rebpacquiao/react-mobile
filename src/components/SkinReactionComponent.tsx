@@ -1,5 +1,4 @@
-import React from "react";
-import { images, checkBoxData, confirm } from "../data/skinReactionData.js";
+import { images, checkBoxData, confirm } from "../data/skinReactionData";
 import Rectangle_768 from "../assets/img/Rectangle_768.png";
 
 const SkinReactionComponent = () => {
